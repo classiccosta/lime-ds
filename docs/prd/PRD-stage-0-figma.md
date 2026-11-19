@@ -20,7 +20,7 @@ Turn Lime's styles into a token system in Figma: tiered variables, purpose-based
 - **Spacing and radius:** one scale each, no fixed widths in primitives.
 
 ## Free-plan limits found
-One mode per collection (so Light and Dark are two collections with identical names), 3 pages per file, no library publishing, Dev Mode or branching, and a cap on Figma MCP calls. Workarounds are on the Cover page.
+One mode per collection (so Light and Dark are two collections with identical names), 3 pages per file, no library publishing, Dev Mode or branching, and a cap on Figma MCP calls. Workarounds are in frame 1.2 of the Overview page.
 
 ## Decisions
 - **Native Figma export vs Tokens Studio:** the native export resolves aliases and uses non-DTCG types, so DTCG is generated from `token-source.js` and the native export is kept only to check.
