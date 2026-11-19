@@ -32,6 +32,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 
 - Frame 1.1 on the Overview page, listing every frame with its number, grouped by section (1 Overview, 2 Foundations, later 3 Components).
 - Each entry links to its frame.
+- Layout: one auto-layout block per section (bold label, then its entries indented 32px, 14px apart). Sections are 40px apart.
 - Update it in the same edit that adds, renames or removes a frame.
 
 ## Helper components
