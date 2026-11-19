@@ -33,6 +33,7 @@ All of this is built in the Figma file.
 
 - **Colours:** merge near-identical greys, drop unused `sidebar-*` and `chart-*`, and name by purpose. The result is 18 semantic colour tokens, aliasing a shared primitive layer.
 - **New tokens:** `border/strong` (passes 3:1), `bg/scrim`, `feedback/error/bg-subtle`.
+- **One deliberate change to Lime's colours:** `neutral/500` is `#565d56`, slightly darker than Lime's `#5a615a`, so secondary text keeps 4.5:1 on hover surfaces in the light theme (it was 4.44:1).
 - **Light theme:** designed from scratch with its own values, not an inversion. A darker lime is the action and focus colour on light backgrounds.
 - **Spacing:** `0, 2, 4, 6, 8, 12, 16, 24, 32, 48`. 10px and 14px are not kept; they map to 8 or 12.
 - **Radius:** five steps by purpose: `sm`, `md`, `lg`, `xl`, `full`.
