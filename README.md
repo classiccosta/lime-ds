@@ -17,7 +17,7 @@ local-first chat client for the language models you run yourself
 ([live](https://lime-zeta-three.vercel.app)). One source of truth for colour, spacing,
 radius and type: tiered variables in Figma, light and dark, exported as DTCG JSON.
 
-<p><a href="https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa/Lime-DS"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
+<p><a href="https://www.figma.com/community/file/1705316793159745808"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
 
 The Figma file calls itself a "design system" because tokens are its foundation layer.
 Components come in later stages, so this repo says "design tokens" until they exist.
@@ -53,7 +53,7 @@ do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 
 - **Token build for CSS, Swift and Kotlin** with CI and a live demo (Stage 1).
 - **Web components** (Stencil) and Storybook, later.
-- **Figma free-plan limits:** one mode per collection, 3 pages, no publishing or Dev Mode.
+- **Figma free-plan limits:** one mode per collection, 3 pages, no library publishing or Dev Mode.
   Each has a workaround; see the Cover page of the Figma file.
 
 ## Docs
