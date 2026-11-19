@@ -17,10 +17,7 @@ local-first chat client for the language models you run yourself
 ([live](https://lime-zeta-three.vercel.app)). One source of truth for colour, spacing,
 radius and type: tiered variables in Figma, light and dark, exported as DTCG JSON.
 
-<p><a href="https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa/Lime-DS"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
-
-The Figma file calls itself a "design system" because tokens are its foundation layer.
-Components come in later stages, so this repo says "design tokens" until they exist.
+<p><a href="https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
 
 ## Pipeline
 
