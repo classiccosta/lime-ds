@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="34" viewBox="0 0 500 34"><rect x="0" y="5" width="134" height="24" rx="6" fill="#eff2ec"/><text x="12" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#5a615a">Figma variables</text>
-<rect x="142" y="5" width="112" height="24" rx="6" fill="#eff2ec"/><text x="154" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#5a615a">DTCG 2025.10</text>
-<rect x="262" y="5" width="104" height="24" rx="6" fill="#eff2ec"/><text x="274" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#5a615a">WCAG 2.2 AA</text>
-<rect x="374" y="5" width="126" height="24" rx="6" fill="#eff2ec"/><text x="386" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#5a615a">Light and dark</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="34" viewBox="0 0 500 34"><rect x="0" y="5" width="134" height="24" rx="6" fill="#e9ede7"/><text x="12" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#565d56">Figma variables</text>
+<rect x="142" y="5" width="112" height="24" rx="6" fill="#e9ede7"/><text x="154" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#565d56">DTCG 2025.10</text>
+<rect x="262" y="5" width="104" height="24" rx="6" fill="#e9ede7"/><text x="274" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#565d56">WCAG 2.2 AA</text>
+<rect x="374" y="5" width="126" height="24" rx="6" fill="#e9ede7"/><text x="386" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#565d56">Light and dark</text>
 </svg>
