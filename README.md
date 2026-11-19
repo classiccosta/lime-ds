@@ -1,6 +1,6 @@
 # Lime DS
 
-Design tokens extracted from [Lime](../Povoa-AI/AI-chat), a local-first LLM chat client. Lime stays in production untouched; this project is the case study.
+Design tokens extracted from [Lime](https://github.com/classiccosta/lime-local-ai) ([live](https://lime-zeta-three.vercel.app)), a local-first LLM chat client. Lime stays in production untouched; this project is the case study.
 
 **Figma file:** https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa
 
