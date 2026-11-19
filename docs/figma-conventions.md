@@ -6,15 +6,15 @@ Rules for organising the Lime DS Figma file. Adapted from the Material 3 Design 
 
 | Page | Holds |
 |---|---|
-| Cover | Project thumbnail, Table of contents, Plan limits |
-| Foundations | One frame per foundation: Colour, Typography, Spacing, Radius (later Elevation, Motion) |
-| Guidelines | One frame per topic: Tiers, Naming, Do and don't |
+| Cover | The project thumbnail only |
+| Overview | Section 1: 1.1 Table of contents, 1.2 How it works (plan limits and production approach), 1.3 Tiers, 1.4 Naming, 1.5 Do and don't. The `.Header` helper lives here too |
+| Library | Section 2, Foundations: 2.1 Colour, 2.2 Typography, 2.3 Spacing, 2.4 Radius. Section 3, Components, follows from Stage 2 |
 
 With a paid plan the target is Material's layout: Getting started, Table of contents, one page per foundation, a divider page, then one page per component in alphabetical order.
 
 ## Frames
 
-- **Name:** `<Page> / <Topic>`, for example `Foundations / Colour`.
+- **Name:** `<number> <Section> / <Topic>`, for example `2.1 Foundations / Colour`. The number is section.item, the same as in the Table of contents. Renumber when a frame is added or removed.
 - **One foundation per frame.** Never two foundations in one frame.
 - **Layout:** frames sit side by side, top-aligned, left to right in Table of contents order, 120px apart. Vertical auto layout, 1440px wide, background `color/bg/page` from Theme/Dark.
 - **Light and Dark** are shown side by side inside the frame, each bound to its own theme collection.
@@ -28,7 +28,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 
 ## Table of contents
 
-- A frame on the Cover page listing every frame, grouped by page.
+- Frame 1.1 on the Overview page, listing every frame with its number, grouped by section (1 Overview, 2 Foundations, later 3 Components).
 - Each entry links to its frame.
 - Update it in the same edit that adds, renames or removes a frame.
 
