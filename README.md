@@ -1,31 +1,60 @@
-# Lime DS
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/banner-dark.svg">
+  <img alt="Lime DS — design tokens" src="docs/media/readme/banner-light.svg" width="846">
+</picture>
+</p>
 
-Design tokens extracted from [Lime](https://github.com/classiccosta/lime-local-ai) ([live](https://lime-zeta-three.vercel.app)), a local-first LLM chat client. Lime stays in production untouched; this project is the case study.
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/tags-dark.svg">
+  <img alt="Figma variables, DTCG 2025.10, WCAG 2.2 AA, light and dark" src="docs/media/readme/tags-light.svg">
+</picture>
+</p>
 
-**Figma file:** https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa
+Design tokens extracted from [Lime](https://github.com/classiccosta/lime-local-ai), a
+local-first chat client for the language models you run yourself
+([live](https://lime-zeta-three.vercel.app)). One source of truth for colour, spacing,
+radius and type: tiered variables in Figma, light and dark, exported as DTCG JSON.
 
-| Stage | What | State |
-|---|---|---|
-| 0 | Audit of Lime, Figma foundations, DTCG tokens | Done |
-| 1 | Monorepo, token build (CSS, Swift, Kotlin), CI, demo | Next |
-| 2+ | Web components (Stencil), Storybook | Later |
+<p><a href="https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
 
-## Where things are
+## Pipeline
 
-| Path | What |
-|---|---|
-| `scripts/token-source.js` | **Edit token values here.** |
-| `tokens/*.json` | Generated DTCG files. The pipeline input. Do not edit. |
-| `tokens/figma-export/` | Figma's own export, kept only for checking. |
-| `docs/audit/AUDIT.md` | What Lime looked like before, and what we decided. (The audit script itself is local and private.) |
-| `docs/token-pipeline.md` | How tokens flow, and what to do when Figma changes. |
-| `docs/prd/` | Requirements for Stages 0 and 1. |
+![Token pipeline: what differs and what is shared](docs/token-pipeline.svg)
 
-## Commands
+## Try it
 
 ```bash
-npm run build     # source → tokens/*.json, then validate
+npm run build     # token-source.js → tokens/*.json, then validate
 npm run compare   # tokens/ vs a fresh Figma export
 ```
 
-Figma free-plan limits and their workarounds are listed on the Cover page of the Figma file.
+**Edit token values in `scripts/token-source.js`.** `tokens/*.json` are generated; never
+edit them. `tokens/figma-export/` is Figma's own export, kept only for checking. What to
+do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
+
+## What's in Stage 0
+
+- **Audit of Lime:** 32 colour tokens turned out to be 14 distinct values, and 4 contrast
+  pairs failed (all borders). See [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md).
+- **18 semantic colour tokens,** named by purpose and aliasing a shared primitive layer,
+  plus spacing, radius and 6 text styles, all bound to variables.
+- **Light and dark themes** with identical token names. The light theme is new; Lime only
+  had a dark one.
+- **WCAG 2.2 AA** on every text, UI and focus pair, in both themes. `npm run build` fails
+  if one drops below.
+- **Four DTCG 2025.10 files** in `tokens/`, checked against Figma's export.
+
+## Not yet
+
+- **Token build for CSS, Swift and Kotlin** with CI and a live demo (Stage 1).
+- **Web components** (Stencil) and Storybook, later.
+- **Figma free-plan limits:** one mode per collection, 3 pages, no publishing or Dev Mode.
+  Each has a workaround; see the Cover page of the Figma file.
+
+## Docs
+
+- [`docs/token-pipeline.md`](docs/token-pipeline.md): how tokens flow, and the rule when Figma changes
+- [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md): what Lime looked like before, and what we decided
+- [`docs/prd/`](docs/prd/): requirements for Stages 0 and 1

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="34" viewBox="0 0 500 34"><rect x="0" y="5" width="134" height="24" rx="6" fill="#2a2e2a"/><text x="12" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#a8aea5">Figma variables</text>
+<rect x="142" y="5" width="112" height="24" rx="6" fill="#2a2e2a"/><text x="154" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#a8aea5">DTCG 2025.10</text>
+<rect x="262" y="5" width="104" height="24" rx="6" fill="#2a2e2a"/><text x="274" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#a8aea5">WCAG 2.2 AA</text>
+<rect x="374" y="5" width="126" height="24" rx="6" fill="#2a2e2a"/><text x="386" y="21.5" style="font:400 12px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" fill="#a8aea5">Light and dark</text>
+</svg>
