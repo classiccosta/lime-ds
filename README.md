@@ -59,5 +59,6 @@ do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 ## Docs
 
 - [`docs/token-pipeline.md`](docs/token-pipeline.md): how tokens flow, and the rule when Figma changes
+- [`docs/figma-conventions.md`](docs/figma-conventions.md): how the Figma file is organised
 - [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md): what Lime looked like before, and what we decided
 - [`docs/prd/`](docs/prd/): requirements for Stages 0 and 1
