@@ -19,6 +19,8 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 - **Layout:** frames sit side by side, top-aligned, left to right in Table of contents order, 120px apart. Vertical auto layout, 1440px wide, background `color/bg/page` from Theme/Dark.
 - **Light and Dark** are shown side by side inside the frame, each bound to its own theme collection.
 - **Every frame starts with a `.Header` instance** (see below).
+- **Numbered titles:** the `.Header` title starts with the frame number, for example `2.1 Colour`, matching the frame name and the Table of contents.
+- **Text colour:** all text on the dark doc frames is `color/text/primary` (white). `color/text/secondary` is too faint to read at this size, so the `.Header` link and definition use primary too.
 - **Titles:** the `.Header` title and every section heading inside a frame use `text/display` (24/32), the largest style in Lime's scale. Body text uses `text/body`. No doc-only sizes: the file keeps Lime's six text styles.
 
 ## Header component
