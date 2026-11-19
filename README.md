@@ -54,11 +54,12 @@ do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 - **Token build for CSS, Swift and Kotlin** with CI and a live demo (Stage 1).
 - **Web components** (Stencil) and Storybook, later.
 - **Figma free-plan limits:** one mode per collection, 3 pages, no library publishing or Dev Mode.
-  Each has a workaround; see frame 1.2 (Overview page) of the Figma file.
+  Each has a workaround; see [docs/figma-plan-limits.md](docs/figma-plan-limits.md).
 
 ## Docs
 
 - [`docs/token-pipeline.md`](docs/token-pipeline.md): how tokens flow, and the rule when Figma changes
 - [`docs/figma-conventions.md`](docs/figma-conventions.md): how the Figma file is organised
+- [`docs/figma-plan-limits.md`](docs/figma-plan-limits.md): free-plan limits and the production approach
 - [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md): what Lime looked like before, and what we decided
 - [`docs/prd/`](docs/prd/): requirements for Stages 0 and 1

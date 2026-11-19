@@ -40,7 +40,7 @@ lime-ds/
 **6. Lime adoption (optional, after 1 to 5).** Tokens only. Install from the `tokens-v1.0.0` tag (fallback: copy `variables.css`), alias Lime's variables onto `--lime-…`, replace leftover palette classes, add a theme toggle. One PR with before and after screenshots; no redesign.
 
 ## README must include
-Problem and solution in 3 lines with the pipeline diagram · "Done by hand at KPMG, automated here" · "Lime is the case study, the DS is the extraction" · plan limits and the production approach (the table in Figma frame 1.2, Overview page, plus `docs/token-pipeline.md`) · links to demo, Figma and audit.
+Problem and solution in 3 lines with the pipeline diagram · "Done by hand at KPMG, automated here" · "Lime is the case study, the DS is the extraction" · plan limits and the production approach (the table in `docs/figma-plan-limits.md`, plus `docs/token-pipeline.md`) · links to demo, Figma and audit.
 
 ## Acceptance
 - [ ] `pnpm build` generates CSS, Swift and Android outputs

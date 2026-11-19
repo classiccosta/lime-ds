@@ -7,7 +7,7 @@ Rules for organising the Lime DS Figma file. Adapted from the Material 3 Design 
 | Page | Holds |
 |---|---|
 | Cover | The project thumbnail only |
-| Overview | Section 1: 1.1 Table of contents, 1.2 How it works (plan limits and production approach), 1.3 Tiers, 1.4 Naming, 1.5 Do and don't. The `.Header` helper lives here too |
+| Overview | Section 1: 1.1 Table of contents, 1.2 Tiers, 1.3 Naming, 1.4 Do and don't. The `.Header` helper lives here too |
 | Library | Section 2, Foundations: 2.1 Colour, 2.2 Typography, 2.3 Spacing, 2.4 Radius. Section 3, Components, follows from Stage 2 |
 
 With a paid plan the target is Material's layout: Getting started, Table of contents, one page per foundation, a divider page, then one page per component in alphabetical order.
@@ -26,7 +26,8 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 ## Header component
 
 - One component, `.Header`, used on every documentation frame.
-- Three text properties: **Component** (the title), **Link** (one line saying where the rule lives, for example the docs file), **Definition** (one sentence on what the frame defines).
+- Two text properties: **Component** (the title) and **Definition** (one or two short sentences on what the frame defines). The Table of contents hides its Definition. Pointers to the docs live in the repo, not on the boards.
+- Keep board text short. No audit numbers on boards: the audit lives in `docs/audit/`.
 
 ## Table of contents
 
