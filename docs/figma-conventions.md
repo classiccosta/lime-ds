@@ -21,7 +21,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 - **Every frame starts with a `.Header` instance** (see below).
 - **Numbered titles:** the `.Header` title starts with the frame number, for example `2.1 Colour`, matching the frame name and the Table of contents.
 - **Text colour:** all text on the dark doc frames is `color/text/primary` (white). `color/text/secondary` is too faint to read at this size, so the `.Header` link and definition use primary too.
-- **Titles:** the `.Header` title and every section heading inside a frame use `text/display` (24/32), the largest style in Lime's scale. Body text uses `text/body`. No doc-only sizes: the file keeps Lime's six text styles.
+- **Titles:** the `.Header` title is 48/56 and every section heading inside a frame is 32/40, both bold, `color/text/primary`. These sizes are documentation-only and set directly on the layers. They are not text styles or variables, because Lime's scale stops at 24 and the DS must not grow tokens for the docs. Body text uses `text/body`. Lime's six text styles stay untouched.
 
 ## Header component
 
