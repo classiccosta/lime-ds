@@ -27,6 +27,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 
 - One component, `.Header`, used on every documentation frame.
 - Two text properties: **Component** (the title) and **Definition** (one or two short sentences on what the frame defines). The Table of contents hides its Definition. Pointers to the docs live in the repo, not on the boards.
+- Illustrations in 1.4 Do and don't use fixed colours on purpose: they depict Light and Dark side by side, so they are not bound to variables.
 - Keep board text short. No audit numbers on boards: the audit lives in `docs/audit/`.
 
 ## Table of contents
