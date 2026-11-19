@@ -1,75 +1,39 @@
 {
   "space": {
-    "inset": {
-      "xs": {
-        "$type": "dimension",
-        "$value": "{space.4}",
-        "$description": "Padding inside a container (4px). Not for gaps between siblings."
-      },
-      "sm": {
-        "$type": "dimension",
-        "$value": "{space.8}",
-        "$description": "Padding inside a container (8px). Not for gaps between siblings."
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "{space.12}",
-        "$description": "Padding inside a container (12px). Not for gaps between siblings."
-      },
-      "lg": {
-        "$type": "dimension",
-        "$value": "{space.16}",
-        "$description": "Padding inside a container (16px). Not for gaps between siblings."
-      },
-      "xl": {
-        "$type": "dimension",
-        "$value": "{space.24}",
-        "$description": "Padding inside a container (24px). Not for gaps between siblings."
-      }
+    "xs": {
+      "$type": "dimension",
+      "$value": "{space.4}",
+      "$description": "Tightest gap or padding (4px). Works for padding and gaps."
     },
-    "stack": {
-      "sm": {
-        "$type": "dimension",
-        "$value": "{space.8}",
-        "$description": "Vertical gap between stacked items (8px)."
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "{space.16}",
-        "$description": "Vertical gap between stacked items (16px)."
-      },
-      "lg": {
-        "$type": "dimension",
-        "$value": "{space.24}",
-        "$description": "Vertical gap between stacked items (24px)."
-      },
-      "xl": {
-        "$type": "dimension",
-        "$value": "{space.32}",
-        "$description": "Vertical gap between stacked items (32px)."
-      }
+    "sm": {
+      "$type": "dimension",
+      "$value": "{space.8}",
+      "$description": "Small gap or padding (8px). Works for padding and gaps."
     },
-    "inline": {
-      "xs": {
-        "$type": "dimension",
-        "$value": "{space.4}",
-        "$description": "Horizontal gap between inline items (4px)."
-      },
-      "sm": {
-        "$type": "dimension",
-        "$value": "{space.8}",
-        "$description": "Horizontal gap between inline items (8px)."
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "{space.12}",
-        "$description": "Horizontal gap between inline items (12px)."
-      },
-      "lg": {
-        "$type": "dimension",
-        "$value": "{space.16}",
-        "$description": "Horizontal gap between inline items (16px)."
-      }
+    "md": {
+      "$type": "dimension",
+      "$value": "{space.12}",
+      "$description": "Default padding inside controls (12px). Works for padding and gaps."
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "{space.16}",
+      "$description": "Default gap between blocks and padding inside cards (16px). Works for padding and gaps."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "{space.24}",
+      "$description": "Roomy padding and gaps between groups (24px). Works for padding and gaps."
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "{space.32}",
+      "$description": "Gap between sections (32px). Works for padding and gaps."
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$value": "{space.48}",
+      "$description": "Largest gap, for page-level separation (48px). Works for padding and gaps."
     }
   },
   "radius": {

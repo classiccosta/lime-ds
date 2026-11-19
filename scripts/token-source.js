@@ -97,11 +97,7 @@ export const fontFamily = { sans: 'Archivo', mono: 'JetBrains Mono' };
 
 // Layout semantic tokens: [name, primitive target, description]
 export const layout = [];
-for (const [k, v] of [['xs', 4], ['sm', 8], ['md', 12], ['lg', 16], ['xl', 24]])
-  layout.push([`space/inset/${k}`, `space/${v}`, `Padding inside a container (${v}px). Not for gaps between siblings.`]);
-for (const [k, v] of [['sm', 8], ['md', 16], ['lg', 24], ['xl', 32]])
-  layout.push([`space/stack/${k}`, `space/${v}`, `Vertical gap between stacked items (${v}px).`]);
-for (const [k, v] of [['xs', 4], ['sm', 8], ['md', 12], ['lg', 16]])
-  layout.push([`space/inline/${k}`, `space/${v}`, `Horizontal gap between inline items (${v}px).`]);
+for (const [k, v, u] of [['xs', 4, 'Tightest gap or padding'], ['sm', 8, 'Small gap or padding'], ['md', 12, 'Default padding inside controls'], ['lg', 16, 'Default gap between blocks and padding inside cards'], ['xl', 24, 'Roomy padding and gaps between groups'], ['2xl', 32, 'Gap between sections'], ['3xl', 48, 'Largest gap, for page-level separation']])
+  layout.push([`space/${k}`, `space/${v}`, `${u} (${v}px). Works for padding and gaps.`]);
 for (const [k, v, u] of [['sm', 6, 'Small chips, kbd, tooltips'], ['md', 8, 'Buttons, inputs, menu items'], ['lg', 10, 'Cards, composer, list rows'], ['xl', 14, 'Popovers, dialogs, sheets'], ['full', 9999, 'Pills, avatars, round icon buttons']])
   layout.push([`radius/${k}`, `radius/${v}`, `${u}.`]);

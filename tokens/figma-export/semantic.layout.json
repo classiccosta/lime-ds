@@ -1,268 +1,142 @@
 {
   "space": {
-    "inset": {
-      "xs": {
-        "$type": "number",
-        "$value": 4,
-        "$description": "Padding inside a container (4px). Not for gaps between siblings.",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:98",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inset-xs)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:c6f21dd66e6b2a5a8da27ac18ecca523ed2c6bd5/-1:-1",
-            "targetVariableName": "space/4",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "sm": {
-        "$type": "number",
-        "$value": 8,
-        "$description": "Padding inside a container (8px). Not for gaps between siblings.",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:99",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inset-sm)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:dc7b8a9d62fa82d23419d5e16e71e3453fade5c9/-1:-1",
-            "targetVariableName": "space/8",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "md": {
-        "$type": "number",
-        "$value": 12,
-        "$description": "Padding inside a container (12px). Not for gaps between siblings.",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:100",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inset-md)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:62f1c23ea01abd9dd17ce681d2ed8edfece09611/-1:-1",
-            "targetVariableName": "space/12",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "lg": {
-        "$type": "number",
-        "$value": 16,
-        "$description": "Padding inside a container (16px). Not for gaps between siblings.",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:101",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inset-lg)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:293922215747603a1299bd1d5c15e4a336466183/-1:-1",
-            "targetVariableName": "space/16",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "xl": {
-        "$type": "number",
-        "$value": 24,
-        "$description": "Padding inside a container (24px). Not for gaps between siblings.",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:102",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inset-xl)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:16d24d0cc6b1dd1569c1c7a703bb7942719415a4/-1:-1",
-            "targetVariableName": "space/24",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+    "xs": {
+      "$type": "number",
+      "$value": 4,
+      "$description": "Tightest gap or padding (4px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:98",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-xs)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:c6f21dd66e6b2a5a8da27ac18ecca523ed2c6bd5/-1:-1",
+          "targetVariableName": "space/4",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
       }
     },
-    "stack": {
-      "sm": {
-        "$type": "number",
-        "$value": 8,
-        "$description": "Vertical gap between stacked items (8px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:103",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-stack-sm)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:dc7b8a9d62fa82d23419d5e16e71e3453fade5c9/-1:-1",
-            "targetVariableName": "space/8",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "md": {
-        "$type": "number",
-        "$value": 16,
-        "$description": "Vertical gap between stacked items (16px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:104",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-stack-md)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:293922215747603a1299bd1d5c15e4a336466183/-1:-1",
-            "targetVariableName": "space/16",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "lg": {
-        "$type": "number",
-        "$value": 24,
-        "$description": "Vertical gap between stacked items (24px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:105",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-stack-lg)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:16d24d0cc6b1dd1569c1c7a703bb7942719415a4/-1:-1",
-            "targetVariableName": "space/24",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
-        }
-      },
-      "xl": {
-        "$type": "number",
-        "$value": 32,
-        "$description": "Vertical gap between stacked items (32px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:106",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-stack-xl)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:43f73241e3eb29ab8a417bd15fdb8d15e409b9c8/-1:-1",
-            "targetVariableName": "space/32",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+    "sm": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Small gap or padding (8px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:99",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-sm)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:dc7b8a9d62fa82d23419d5e16e71e3453fade5c9/-1:-1",
+          "targetVariableName": "space/8",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
       }
     },
-    "inline": {
-      "xs": {
-        "$type": "number",
-        "$value": 4,
-        "$description": "Horizontal gap between inline items (4px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:107",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inline-xs)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:c6f21dd66e6b2a5a8da27ac18ecca523ed2c6bd5/-1:-1",
-            "targetVariableName": "space/4",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+    "md": {
+      "$type": "number",
+      "$value": 12,
+      "$description": "Default padding inside controls (12px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:100",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-md)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:62f1c23ea01abd9dd17ce681d2ed8edfece09611/-1:-1",
+          "targetVariableName": "space/12",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
-      },
-      "sm": {
-        "$type": "number",
-        "$value": 8,
-        "$description": "Horizontal gap between inline items (8px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:108",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inline-sm)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:dc7b8a9d62fa82d23419d5e16e71e3453fade5c9/-1:-1",
-            "targetVariableName": "space/8",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+      }
+    },
+    "lg": {
+      "$type": "number",
+      "$value": 16,
+      "$description": "Default gap between blocks and padding inside cards (16px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:101",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-lg)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:293922215747603a1299bd1d5c15e4a336466183/-1:-1",
+          "targetVariableName": "space/16",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
-      },
-      "md": {
-        "$type": "number",
-        "$value": 12,
-        "$description": "Horizontal gap between inline items (12px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:109",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inline-md)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:62f1c23ea01abd9dd17ce681d2ed8edfece09611/-1:-1",
-            "targetVariableName": "space/12",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+      }
+    },
+    "xl": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "Roomy padding and gaps between groups (24px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:102",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-xl)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:16d24d0cc6b1dd1569c1c7a703bb7942719415a4/-1:-1",
+          "targetVariableName": "space/24",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
-      },
-      "lg": {
-        "$type": "number",
-        "$value": 16,
-        "$description": "Horizontal gap between inline items (16px).",
-        "$extensions": {
-          "com.figma.variableId": "VariableID:3:110",
-          "com.figma.scopes": [
-            "GAP"
-          ],
-          "com.figma.codeSyntax": {
-            "WEB": "var(--lime-space-inline-lg)"
-          },
-          "com.figma.aliasData": {
-            "targetVariableId": "VariableID:293922215747603a1299bd1d5c15e4a336466183/-1:-1",
-            "targetVariableName": "space/16",
-            "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
-            "targetVariableSetName": "Primitives"
-          }
+      }
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": 32,
+      "$description": "Gap between sections (32px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3:106",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-2xl)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:43f73241e3eb29ab8a417bd15fdb8d15e409b9c8/-1:-1",
+          "targetVariableName": "space/32",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
+        }
+      }
+    },
+    "3xl": {
+      "$type": "number",
+      "$value": 48,
+      "$description": "Largest gap, for page-level separation (48px). Works for padding and gaps.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:83:107",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "var(--lime-space-3xl)"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e5d51f2e2165bf596ff6e7d916555930d6a94020/-1:-1",
+          "targetVariableName": "space/48",
+          "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+          "targetVariableSetName": "Primitives"
         }
       }
     }
