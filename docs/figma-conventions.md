@@ -35,7 +35,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 ## Helper components
 
 - **Dot prefix:** `.Header`, `.Anything`. A dot means internal: designers don't use it, and it is hidden from publishing.
-- Keep helpers on the Cover page, top-left, locked and hidden.
+- Keep helpers on the Overview page, top-left, locked and hidden.
 - Expose editable content as component text properties, not by editing layers inside instances.
 
 ## Variables and styles
@@ -63,7 +63,9 @@ Elevation, motion, state layers (hover, pressed, disabled), density, and contras
 | Three pages, frame names | Done |
 | One foundation per frame | Done (Colour, Typography, Spacing, Radius) |
 | `.Header` component on every frame | Done |
-| Table of contents on Cover | Done, every entry links to its frame |
+| Table of contents (1.1) | Done, numbered, every entry links to its frame |
+| Numbered frames and sections | Done |
+| Cover holds only the thumbnail | Done |
 | Dot-prefixed helpers | Done (`.Header`) |
 
 Keep this table current when the file changes.
