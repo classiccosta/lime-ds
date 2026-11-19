@@ -59,10 +59,10 @@ Elevation, motion, state layers (hover, pressed, disabled), density, and contras
 
 | Convention | In the file |
 |---|---|
-| Three pages, frame names | Done for frame names; Foundations still has 2 mixed frames |
-| One foundation per frame | Pending |
-| `.Header` component on every frame | Pending |
-| Table of contents on Cover | Pending |
-| Dot-prefixed helpers | Pending (no helpers yet) |
+| Three pages, frame names | Done |
+| One foundation per frame | Done (Colour, Typography, Spacing, Radius) |
+| `.Header` component on every frame | Done |
+| Table of contents on Cover | Done, every entry links to its frame |
+| Dot-prefixed helpers | Done (`.Header`) |
 
 Keep this table current when the file changes.
