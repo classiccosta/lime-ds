@@ -1,0 +1,9 @@
+{
+  "name": "lime-ds",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-dtcg.js",
+    "compare": "node scripts/compare-figma-export.js"
+  }
+}

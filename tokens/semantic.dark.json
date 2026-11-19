@@ -1,0 +1,112 @@
+{
+  "color": {
+    "bg": {
+      "page": {
+        "$type": "color",
+        "$value": "{color.neutral.900}",
+        "$description": "App background. Use behind everything. Not for cards or panels: use bg/surface."
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.neutral.800}",
+        "$description": "Raised surfaces: cards, popovers, dialogs, composer. Not for page background."
+      },
+      "inset": {
+        "$type": "color",
+        "$value": "{color.neutral.950}",
+        "$description": "Recessed areas such as code blocks. Sits below the page in dark, a shade under it in light."
+      },
+      "sidebar": {
+        "$type": "color",
+        "$value": "{color.neutral.900}",
+        "$description": "Sidebar panel background only."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.700}",
+        "$description": "Quiet fills for muted blocks, tags, skeletons. Not for interactive hover: use bg/hover."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.neutral.700}",
+        "$description": "Hover and selected fill for list items and menu rows."
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "{color.alpha.black-60}",
+        "$description": "Overlay behind modals and sheets. Always pair with text/on-scrim."
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.neutral.50}",
+        "$description": "Default text and icons. Use on bg/page, surface, inset, sidebar, subtle and hover."
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.neutral.300}",
+        "$description": "Supporting text: captions, hints, metadata. Not for disabled state."
+      },
+      "on-scrim": {
+        "$type": "color",
+        "$value": "{color.base.white}",
+        "$description": "Text and icons placed on bg/scrim, e.g. image lightbox controls."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": "Decorative dividers and card outlines. Below 3:1 by design: do not use for input outlines."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Borders that identify a control (inputs, checkboxes). Meets 3:1 on page and surface."
+      }
+    },
+    "focus": {
+      "ring": {
+        "$type": "color",
+        "$value": "{color.lime.400}",
+        "$description": "Keyboard focus indicator. Meets 3:1 on page and surface in both themes."
+      }
+    },
+    "action": {
+      "primary": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.lime.400}",
+          "$description": "Fill of the primary call to action. Pair with action/primary/fg."
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.lime.950}",
+          "$description": "Text and icons on action/primary/bg."
+        }
+      },
+      "secondary": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.neutral.700}",
+          "$description": "Fill of secondary buttons. Text on it is text/primary."
+        }
+      }
+    },
+    "feedback": {
+      "error": {
+        "fg": {
+          "$type": "color",
+          "$value": "{color.red.400}",
+          "$description": "Error text and icons. Not for destructive fills."
+        },
+        "bg-subtle": {
+          "$type": "color",
+          "$value": "{color.red.900}",
+          "$description": "Background of error banners and inline error blocks. Pair with feedback/error/fg."
+        }
+      }
+    }
+  }
+}

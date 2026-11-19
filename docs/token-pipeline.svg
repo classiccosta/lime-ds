@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="520" viewBox="0 0 680 520" role="img" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title>Token pipeline: what differs and what is shared</title>
+<desc>Two lanes, production and this project, both produce DTCG JSON. After that the pipeline is the same: Style Dictionary, platform outputs, CI tests, PR review and version tag. A small table lists the three differences.</desc>
+<style>
+:root{--bg:#ffffff;--tx:#2c2c2a;--tx2:#5f5e5a;--bx:#f1efe8;--bxs:#888780;--tf:#e1f5ee;--ts:#0f6e56;--tt:#085041;--af:#faeeda;--as:#854f0b;--at:#633806;--ln:#888780}
+@media (prefers-color-scheme: dark){:root{--bg:#1b1e1c;--tx:#f5f7f4;--tx2:#a8aea5;--bx:#2a2e2a;--bxs:#7d857b;--tf:#085041;--ts:#9fe1cb;--tt:#e1f5ee;--af:#633806;--as:#fac775;--at:#faeeda;--ln:#7d857b}}
+.bg{fill:var(--bg)}.t{font-size:14px;fill:var(--tx)}.th{font-size:14px;font-weight:500;fill:var(--tx)}.ts{font-size:12px;fill:var(--tx2)}
+.box rect{fill:var(--bx);stroke:var(--bxs);stroke-width:.5}
+.tl rect{fill:var(--tf);stroke:var(--ts);stroke-width:.5}.tl .th{fill:var(--tt)}.tl .ts{fill:var(--ts)}
+.am rect{fill:var(--af);stroke:var(--as);stroke-width:1}.am .th{fill:var(--at)}.am .ts{fill:var(--as)}
+.arr{stroke:var(--ln);stroke-width:1.5;fill:none}.leader{stroke:var(--ln);stroke-width:.5;stroke-dasharray:3 3}
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect class="bg" width="680" height="520"/>
+<text class="th" x="40" y="34">Differs: how the JSON is made</text>
+<text class="ts" x="40" y="52">Production</text>
+<g class="tl"><rect x="40" y="60" width="120" height="52" rx="8"/><text class="th" x="100.0" y="78" text-anchor="middle" dominant-baseline="central">Figma</text><text class="ts" x="100.0" y="96" text-anchor="middle" dominant-baseline="central">Designers edit</text></g>
+<line x1="160" y1="86" x2="188" y2="86" class="arr" marker-end="url(#arrow)"/>
+<g class="box"><rect x="190" y="60" width="120" height="52" rx="8"/><text class="th" x="250.0" y="78" text-anchor="middle" dominant-baseline="central">Sync tool</text><text class="ts" x="250.0" y="96" text-anchor="middle" dominant-baseline="central">Plugin or API</text></g>
+<text class="ts" x="40" y="142">This project</text>
+<g class="tl"><rect x="40" y="150" width="120" height="52" rx="8"/><text class="th" x="100.0" y="168" text-anchor="middle" dominant-baseline="central">Source file</text><text class="ts" x="100.0" y="186" text-anchor="middle" dominant-baseline="central">Devs edit</text></g>
+<line x1="160" y1="176" x2="188" y2="176" class="arr" marker-end="url(#arrow)"/>
+<g class="box"><rect x="190" y="150" width="120" height="52" rx="8"/><text class="th" x="250.0" y="168" text-anchor="middle" dominant-baseline="central">Build script</text><text class="ts" x="250.0" y="186" text-anchor="middle" dominant-baseline="central">Run by hand</text></g>
+<path d="M310 86 L350 86 L350 130 L418 130" class="arr" marker-end="url(#arrow)"/>
+<path d="M310 176 L350 176 L350 150 L418 150" class="arr" marker-end="url(#arrow)"/>
+<g class="am"><rect x="420" y="104" width="210" height="72" rx="8"/><text class="th" x="525.0" y="128" text-anchor="middle" dominant-baseline="central">DTCG JSON</text><text class="ts" x="525.0" y="148" text-anchor="middle" dominant-baseline="central">Shared format</text><text class="ts" x="525.0" y="164" text-anchor="middle" dominant-baseline="central">Aliases and units</text></g>
+<line x1="525" y1="176" x2="525" y2="236" class="arr" marker-end="url(#arrow)"/>
+<text class="th" x="40" y="232">Same in both: from JSON onward</text>
+<g class="box"><rect x="40" y="250" width="125" height="52" rx="8"/><text class="th" x="102.5" y="268" text-anchor="middle" dominant-baseline="central">Style Dictionary</text><text class="ts" x="102.5" y="286" text-anchor="middle" dominant-baseline="central">Transforms</text></g>
+<line x1="165" y1="276" x2="193" y2="276" class="arr" marker-end="url(#arrow)"/>
+<g class="box"><rect x="195" y="250" width="125" height="52" rx="8"/><text class="th" x="257.5" y="268" text-anchor="middle" dominant-baseline="central">CSS, Swift, Kotlin</text><text class="ts" x="257.5" y="286" text-anchor="middle" dominant-baseline="central">Platform files</text></g>
+<line x1="320" y1="276" x2="348" y2="276" class="arr" marker-end="url(#arrow)"/>
+<g class="box"><rect x="350" y="250" width="125" height="52" rx="8"/><text class="th" x="412.5" y="268" text-anchor="middle" dominant-baseline="central">CI tests</text><text class="ts" x="412.5" y="286" text-anchor="middle" dominant-baseline="central">Contrast, aliases</text></g>
+<line x1="475" y1="276" x2="503" y2="276" class="arr" marker-end="url(#arrow)"/>
+<g class="box"><rect x="505" y="250" width="125" height="52" rx="8"/><text class="th" x="567.5" y="268" text-anchor="middle" dominant-baseline="central">PR and tag</text><text class="ts" x="567.5" y="286" text-anchor="middle" dominant-baseline="central">Review, version</text></g>
+<text class="th" x="40" y="340">Differs: summary</text>
+<text class="ts" x="40" y="366">What</text><text class="th" x="200" y="366">Production</text><text class="th" x="420" y="366">This project</text>
+<line x1="40" y1="376" x2="640" y2="376" class="leader"/>
+<text class="ts" x="40" y="398">Source of truth</text><text class="t" x="200" y="398">Figma</text><text class="t" x="420" y="398">token-source.js</text>
+<line x1="40" y1="410" x2="640" y2="410" class="leader"/>
+<text class="ts" x="40" y="432">JSON arrives</text><text class="t" x="200" y="432">Automatic sync</text><text class="t" x="420" y="432">Manual build</text>
+<line x1="40" y1="444" x2="640" y2="444" class="leader"/>
+<text class="ts" x="40" y="466">Drift check</text><text class="t" x="200" y="466">Sync opens a PR</text><text class="t" x="420" y="466">Compare script</text>
+<g class="tl"><rect x="40" y="490" width="12" height="12" rx="2"/></g><text class="ts" x="58" y="497" dominant-baseline="central">Where edits start</text>
+<g class="am"><rect x="220" y="490" width="12" height="12" rx="2"/></g><text class="ts" x="238" y="497" dominant-baseline="central">Shared format</text>
+</svg>

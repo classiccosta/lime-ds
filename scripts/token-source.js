@@ -1,0 +1,107 @@
+// Single source for the Lime DS tokens. Mirrors the Figma file (eMs1wRJxTAFePPIyqHAXJa).
+// Names use Figma slash paths; build-dtcg.js turns them into DTCG groups.
+export const prim = {
+ "color/base/white": "#ffffff",
+ "color/base/black": "#000000",
+ "color/neutral/50": "#f5f7f4",
+ "color/neutral/100": "#e9ede7",
+ "color/neutral/200": "#d3d9d0",
+ "color/neutral/300": "#a8aea5",
+ "color/neutral/400": "#7d857b",
+ "color/neutral/500": "#565d56",
+ "color/neutral/600": "#383d37",
+ "color/neutral/700": "#2a2e2a",
+ "color/neutral/800": "#222623",
+ "color/neutral/900": "#1b1e1c",
+ "color/neutral/950": "#161917",
+ "color/lime/400": "#d2ee46",
+ "color/lime/700": "#5c6c0b",
+ "color/lime/950": "#14170f",
+ "color/red/100": "#fdecea",
+ "color/red/400": "#f0796d",
+ "color/red/700": "#b3261e",
+ "color/red/900": "#3a1c19"
+};
+export const alpha = {"color/alpha/black-60":[0,0,0,0.6]};
+export const themes = {
+ "light": {
+  "color/bg/page": "neutral/50",
+  "color/bg/surface": "base/white",
+  "color/bg/inset": "neutral/100",
+  "color/bg/sidebar": "neutral/100",
+  "color/bg/subtle": "neutral/100",
+  "color/bg/hover": "neutral/200",
+  "color/bg/scrim": "alpha/black-60",
+  "color/text/primary": "neutral/900",
+  "color/text/secondary": "neutral/500",
+  "color/text/on-scrim": "base/white",
+  "color/border/default": "neutral/200",
+  "color/border/strong": "neutral/400",
+  "color/focus/ring": "lime/700",
+  "color/action/primary/bg": "lime/700",
+  "color/action/primary/fg": "base/white",
+  "color/action/secondary/bg": "neutral/200",
+  "color/feedback/error/fg": "red/700",
+  "color/feedback/error/bg-subtle": "red/100"
+ },
+ "dark": {
+  "color/bg/page": "neutral/900",
+  "color/bg/surface": "neutral/800",
+  "color/bg/inset": "neutral/950",
+  "color/bg/sidebar": "neutral/900",
+  "color/bg/subtle": "neutral/700",
+  "color/bg/hover": "neutral/700",
+  "color/bg/scrim": "alpha/black-60",
+  "color/text/primary": "neutral/50",
+  "color/text/secondary": "neutral/300",
+  "color/text/on-scrim": "base/white",
+  "color/border/default": "neutral/600",
+  "color/border/strong": "neutral/400",
+  "color/focus/ring": "lime/400",
+  "color/action/primary/bg": "lime/400",
+  "color/action/primary/fg": "lime/950",
+  "color/action/secondary/bg": "neutral/700",
+  "color/feedback/error/fg": "red/400",
+  "color/feedback/error/bg-subtle": "red/900"
+ }
+};
+export const desc = {
+'color/bg/page':'App background. Use behind everything. Not for cards or panels: use bg/surface.',
+'color/bg/surface':'Raised surfaces: cards, popovers, dialogs, composer. Not for page background.',
+'color/bg/inset':'Recessed areas such as code blocks. Sits below the page in dark, a shade under it in light.',
+'color/bg/sidebar':'Sidebar panel background only.',
+'color/bg/subtle':'Quiet fills for muted blocks, tags, skeletons. Not for interactive hover: use bg/hover.',
+'color/bg/hover':'Hover and selected fill for list items and menu rows.',
+'color/bg/scrim':'Overlay behind modals and sheets. Always pair with text/on-scrim.',
+'color/text/primary':'Default text and icons. Use on bg/page, surface, inset, sidebar, subtle and hover.',
+'color/text/secondary':'Supporting text: captions, hints, metadata. Not for disabled state.',
+'color/text/on-scrim':'Text and icons placed on bg/scrim, e.g. image lightbox controls.',
+'color/border/default':'Decorative dividers and card outlines. Below 3:1 by design: do not use for input outlines.',
+'color/border/strong':'Borders that identify a control (inputs, checkboxes). Meets 3:1 on page and surface.',
+'color/focus/ring':'Keyboard focus indicator. Meets 3:1 on page and surface in both themes.',
+'color/action/primary/bg':'Fill of the primary call to action. Pair with action/primary/fg.',
+'color/action/primary/fg':'Text and icons on action/primary/bg.',
+'color/action/secondary/bg':'Fill of secondary buttons. Text on it is text/primary.',
+'color/feedback/error/fg':'Error text and icons. Not for destructive fills.',
+'color/feedback/error/bg-subtle':'Background of error banners and inline error blocks. Pair with feedback/error/fg.'};
+
+
+// Primitive numbers and strings. [name, value, unit]
+export const space = [0, 2, 4, 6, 8, 12, 16, 24, 32, 48];
+export const radius = { 0: 0, 6: 6, 8: 8, 10: 10, 14: 14, 9999: 9999 };
+export const fontSize = [12, 14, 16, 18, 20, 24];
+export const fontWeight = [400, 500, 600, 700];
+export const lineHeight = [16, 20, 24, 28, 32];
+export const letterSpacing = { 0: 0, wide: 0.6 };
+export const fontFamily = { sans: 'Archivo', mono: 'JetBrains Mono' };
+
+// Layout semantic tokens: [name, primitive target, description]
+export const layout = [];
+for (const [k, v] of [['xs', 4], ['sm', 8], ['md', 12], ['lg', 16], ['xl', 24]])
+  layout.push([`space/inset/${k}`, `space/${v}`, `Padding inside a container (${v}px). Not for gaps between siblings.`]);
+for (const [k, v] of [['sm', 8], ['md', 16], ['lg', 24], ['xl', 32]])
+  layout.push([`space/stack/${k}`, `space/${v}`, `Vertical gap between stacked items (${v}px).`]);
+for (const [k, v] of [['xs', 4], ['sm', 8], ['md', 12], ['lg', 16]])
+  layout.push([`space/inline/${k}`, `space/${v}`, `Horizontal gap between inline items (${v}px).`]);
+for (const [k, v, u] of [['sm', 6, 'Small chips, kbd, tooltips'], ['md', 8, 'Buttons, inputs, menu items'], ['lg', 10, 'Cards, composer, list rows'], ['xl', 14, 'Popovers, dialogs, sheets'], ['full', 9999, 'Pills, avatars, round icon buttons']])
+  layout.push([`radius/${k}`, `radius/${v}`, `${u}.`]);

@@ -1,0 +1,102 @@
+{
+  "space": {
+    "inset": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{space.4}",
+        "$description": "Padding inside a container (4px). Not for gaps between siblings."
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{space.8}",
+        "$description": "Padding inside a container (8px). Not for gaps between siblings."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{space.12}",
+        "$description": "Padding inside a container (12px). Not for gaps between siblings."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{space.16}",
+        "$description": "Padding inside a container (16px). Not for gaps between siblings."
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{space.24}",
+        "$description": "Padding inside a container (24px). Not for gaps between siblings."
+      }
+    },
+    "stack": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "{space.8}",
+        "$description": "Vertical gap between stacked items (8px)."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{space.16}",
+        "$description": "Vertical gap between stacked items (16px)."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{space.24}",
+        "$description": "Vertical gap between stacked items (24px)."
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{space.32}",
+        "$description": "Vertical gap between stacked items (32px)."
+      }
+    },
+    "inline": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{space.4}",
+        "$description": "Horizontal gap between inline items (4px)."
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{space.8}",
+        "$description": "Horizontal gap between inline items (8px)."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{space.12}",
+        "$description": "Horizontal gap between inline items (12px)."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{space.16}",
+        "$description": "Horizontal gap between inline items (16px)."
+      }
+    }
+  },
+  "radius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "{radius.6}",
+      "$description": "Small chips, kbd, tooltips."
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "{radius.8}",
+      "$description": "Buttons, inputs, menu items."
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "{radius.10}",
+      "$description": "Cards, composer, list rows."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "{radius.14}",
+      "$description": "Popovers, dialogs, sheets."
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "{radius.9999}",
+      "$description": "Pills, avatars, round icon buttons."
+    }
+  }
+}
