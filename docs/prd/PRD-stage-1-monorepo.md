@@ -6,7 +6,7 @@ A `lime-ds` monorepo with one package: a token pipeline that builds CSS, Swift a
 Lime is the case study, not a dependency. Adopting the tokens in Lime is an optional follow-up, never a blocker.
 
 ## Starts from (Stage 0)
-The four files in `tokens/` (`primitive`, `semantic.light`, `semantic.dark`, `semantic.layout`), generated from `scripts/token-source.js`. Figma's own export in `tokens/figma-export/` is a check, not an input. See `docs/token-pipeline.md`.
+The five files in `tokens/` (`primitive`, `semantic.light`, `semantic.dark`, `semantic.layout`, `semantic.typography`), generated from `scripts/token-source.js`. Figma's own export in `tokens/figma-export/` is a check, not an input. See `docs/token-pipeline.md`.
 
 ## Out of scope
 Components (later, as Stencil web components with Storybook), React wrappers, changesets, NPM publishing, empty placeholder folders.
@@ -27,7 +27,7 @@ lime-ds/
 **1. Monorepo.** pnpm workspaces, Node LTS, lockfile committed, Style Dictionary pinned to v5 (needs Node 22+). Tested: v4.4.0 outputs `[object Object]` for our colour and dimension values; v5.8.0 outputs `#1b1e1c`, `4px` and keeps aliases as `var(--lime-…)`. Root scripts: `build`, `test`, `dev`.
 
 **2. packages/tokens.**
-- Input: the four files, names unchanged. Layout (spacing, radius) is emitted once in `:root`, not per theme. Aliases are real DTCG references, so the CSS keeps `var(--lime-…)` links to primitives.
+- Input: the five files, names unchanged. `semantic.typography` holds composite typography tokens (family, weight, size, line height, letter spacing, all references to primitives); it is generated in the repo and has no Figma variable counterpart, because text styles are not variables. Layout (spacing, radius) is emitted once in `:root`, not per theme. Aliases are real DTCG references, so the CSS keeps `var(--lime-…)` links to primitives.
 - Outputs: `css/variables.css` (`:root` light, `[data-theme="dark"]`, prefix `--lime-`), `ios/Tokens.swift`, `android/` (XML or Kotlin, decide).
 - Vitest tests: snapshot of every output · WCAG 2.2 AA contrast on all text and UI pairs in both themes · every semantic token aliases a primitive and has a description · Light and Dark have the same names · files agree with `tokens/figma-export/`.
 
@@ -40,7 +40,7 @@ lime-ds/
 **6. Lime adoption (optional, after 1 to 5).** Tokens only. Install from the `tokens-v1.0.0` tag (fallback: copy `variables.css`), alias Lime's variables onto `--lime-…`, replace leftover palette classes, add a theme toggle. One PR with before and after screenshots; no redesign.
 
 ## README must include
-Problem and solution in 3 lines with the pipeline diagram · "Done by hand at KPMG, automated here" · "Lime is the case study, the DS is the extraction" · plan limits and the production approach (the table on the Figma Cover page, plus `docs/token-pipeline.md`) · links to demo, Figma and audit.
+Problem and solution in 3 lines with the pipeline diagram · "Done by hand at KPMG, automated here" · "Lime is the case study, the DS is the extraction" · plan limits and the production approach (the table in `docs/figma-plan-limits.md`, plus `docs/token-pipeline.md`) · links to demo, Figma and audit.
 
 ## Acceptance
 - [ ] `pnpm build` generates CSS, Swift and Android outputs

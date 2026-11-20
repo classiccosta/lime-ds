@@ -1,7 +1,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/banner-dark.svg">
-  <img alt="Lime DS — design tokens" src="docs/media/readme/banner-light.svg" width="846">
+  <img alt="Lime Design System — design tokens" src="docs/media/readme/banner-light.svg" width="846">
 </picture>
 </p>
 
@@ -12,49 +12,42 @@
 </picture>
 </p>
 
-Design tokens extracted from [Lime](https://github.com/classiccosta/lime-local-ai), a
-local-first chat client for the language models you run yourself
-([live](https://lime-zeta-three.vercel.app)). One source of truth for colour, spacing,
-radius and type: tiered variables in Figma, light and dark, exported as DTCG JSON.
+Design tokens extracted from [Lime](https://github.com/classiccosta/lime-local-ai) ([live](https://lime-zeta-three.vercel.app)). Figma variables in, DTCG JSON out.
 
-<p><a href="https://www.figma.com/design/eMs1wRJxTAFePPIyqHAXJa"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma file" src="docs/media/readme/figma-light.svg"></picture></a></p>
+<p><a href="https://www.figma.com/community/file/1705316793159745808"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/figma-dark.svg"><img alt="Figma UI Kit" src="docs/media/readme/figma-light.svg"></picture></a></p>
 
-## Pipeline
+## What exists
+
+- **Figma UI Kit:** Cover, Overview (tiers, naming, do and don't), Library (colour, typography, spacing, radius, token reference).
+- **Variables:** Primitives, Theme/Light, Theme/Dark, Layout. Semantic tokens alias primitives.
+- **Text styles:** 6, bound to variables.
+- **Themes:** light and dark, identical token names.
+- **Accessibility:** WCAG 2.2 AA on every text, UI and focus pair, both themes.
+- **Tokens:** 5 DTCG 2025.10 files in `tokens/`.
+
+## How it works
 
 ![Token pipeline: what differs and what is shared](docs/token-pipeline.svg)
 
-## Try it
-
 ```bash
-npm run build     # token-source.js → tokens/*.json, then validate
+npm run build     # scripts/token-source.js → tokens/*.json, then validate
 npm run compare   # tokens/ vs a fresh Figma export
 ```
 
-**Edit token values in `scripts/token-source.js`.** `tokens/*.json` are generated; never
-edit them. `tokens/figma-export/` is Figma's own export, kept only for checking. What to
-do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
-
-## What's in Stage 0
-
-- **Audit of Lime:** 32 colour tokens turned out to be 14 distinct values, and 4 contrast
-  pairs failed (all borders). See [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md).
-- **18 semantic colour tokens,** named by purpose and aliasing a shared primitive layer,
-  plus spacing, radius and 6 text styles, all bound to variables.
-- **Light and dark themes** with identical token names. The light theme is new; Lime only
-  had a dark one.
-- **WCAG 2.2 AA** on every text, UI and focus pair, in both themes. `npm run build` fails
-  if one drops below.
-- **Four DTCG 2025.10 files** in `tokens/`, checked against Figma's export.
+- Edit values in `scripts/token-source.js` only. `tokens/*.json` are generated.
+- `tokens/figma-export/` is Figma's own export, kept for checking.
+- `npm run build` fails if a contrast pair drops below AA.
+- When Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 
 ## Not yet
 
-- **Token build for CSS, Swift and Kotlin** with CI and a live demo (Stage 1).
-- **Web components** (Stencil) and Storybook, later.
-- **Figma free-plan limits:** one mode per collection, 3 pages, no publishing or Dev Mode.
-  Each has a workaround; see the Cover page of the Figma file.
+- Token build for CSS, Swift and Kotlin, CI, live demo (Stage 1).
+- Web components (Stencil) and Storybook.
 
 ## Docs
 
-- [`docs/token-pipeline.md`](docs/token-pipeline.md): how tokens flow, and the rule when Figma changes
-- [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md): what Lime looked like before, and what we decided
-- [`docs/prd/`](docs/prd/): requirements for Stages 0 and 1
+- [`docs/token-pipeline.md`](docs/token-pipeline.md): token flow and the update rule
+- [`docs/figma-conventions.md`](docs/figma-conventions.md): how the Figma file is organised
+- [`docs/figma-plan-limits.md`](docs/figma-plan-limits.md): free-plan limits and workarounds
+- [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md): Lime before, and what we decided
+- [`docs/prd/`](docs/prd/): Stage 0 and 1 requirements
