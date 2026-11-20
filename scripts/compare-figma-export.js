@@ -50,3 +50,4 @@ const nativeAliasRefs = [...flat(R('tokens/figma-export/semantic.light.json'))].
 const types = new Set();
 for (const f of ['primitive', 'semantic.layout', 'semantic.light']) for (const [, t] of flat(R(`tokens/figma-export/${f}.json`))) types.add(`${f}:${t.$type}`);
 console.log(JSON.stringify({ checked, issueCount: issues.length, issues: issues.slice(0, 20), nativeDtcgAliasRefsInLight: nativeAliasRefs, nativeTypes: [...types] }, null, 2));
+if (issues.length) process.exit(1);
