@@ -8,7 +8,7 @@ Rules for organising the Lime DS Figma file. Adapted from the Material 3 Design 
 |---|---|
 | Cover | The project thumbnail only |
 | Overview | Section 1: 1.1 Table of contents, 1.2 Tiers, 1.3 Naming, 1.4 Do and don't. The `.Header` helper lives here too |
-| Library | Section 2, Foundations: 2.1 Colour, 2.2 Typography, 2.3 Spacing, 2.4 Radius. Section 3, Components, follows from Stage 2 |
+| Library | Section 2, Foundations: 2.1 Colour, 2.2 Typography, 2.3 Spacing, 2.4 Radius, 2.5 Token reference (every token with its Figma name, token path and CSS variable). Section 3, Components, follows from Stage 2 |
 
 With a paid plan the target is Material's layout: Getting started, Table of contents, one page per foundation, a divider page, then one page per component in alphabetical order.
 
