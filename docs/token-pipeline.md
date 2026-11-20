@@ -29,3 +29,9 @@ Also:
 - `tokens/*.json` are generated. Never edit them.
 - Rename or delete a token only with a deprecated alias for one version.
 - A failing contrast check blocks the change. Fix the value, not the check.
+
+## Typography and state tokens
+
+- **State colours:** `color/action/primary/bg-hover`, `bg-pressed`, `color/action/disabled/bg` and `fg` are ordinary semantic variables in Theme/Light and Theme/Dark. They use the lime primitives 300 to 900 added for them. Disabled colours are exempt from the contrast checks; hover and pressed are checked against `action/primary/fg`.
+- **Typography:** `semantic.typography.json` holds one composite token per text style (`text/display` and so on), each a set of references to primitives. It is generated from `textStyles` in `scripts/token-source.js`. Figma text styles are not variables, so `npm run compare` does not cover this file. Keep the two in step by hand: a change to a text style in Figma means the same edit in `textStyles`.
+- **Open point:** the DTCG 2025.10 typography type may expect `lineHeight` as a number, while ours references a pixel dimension. Verify when Style Dictionary v5 reads the file in Stage 1.

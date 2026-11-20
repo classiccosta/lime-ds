@@ -84,6 +84,28 @@
           "$type": "color",
           "$value": "{color.lime.950}",
           "$description": "Text and icons on action/primary/bg."
+        },
+        "bg-hover": {
+          "$type": "color",
+          "$value": "{color.lime.300}",
+          "$description": "Primary action background while hovered. Pair with action/primary/fg."
+        },
+        "bg-pressed": {
+          "$type": "color",
+          "$value": "{color.lime.500}",
+          "$description": "Primary action background while pressed. Pair with action/primary/fg."
+        }
+      },
+      "disabled": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.neutral.700}",
+          "$description": "Background of any disabled control."
+        },
+        "fg": {
+          "$type": "color",
+          "$value": "{color.neutral.500}",
+          "$description": "Text and icons of any disabled control. Exempt from WCAG contrast: inactive controls need not meet it."
         }
       },
       "secondary": {

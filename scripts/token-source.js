@@ -14,8 +14,12 @@ export const prim = {
  "color/neutral/800": "#222623",
  "color/neutral/900": "#1b1e1c",
  "color/neutral/950": "#161917",
+ "color/lime/300": "#dcf266",
  "color/lime/400": "#d2ee46",
+ "color/lime/500": "#b3cc2c",
  "color/lime/700": "#5c6c0b",
+ "color/lime/800": "#4a5809",
+ "color/lime/900": "#3a4607",
  "color/lime/950": "#14170f",
  "color/red/100": "#fdecea",
  "color/red/400": "#f0796d",
@@ -40,6 +44,10 @@ export const themes = {
   "color/focus/ring": "lime/700",
   "color/action/primary/bg": "lime/700",
   "color/action/primary/fg": "base/white",
+  "color/action/primary/bg-hover": "lime/800",
+  "color/action/primary/bg-pressed": "lime/900",
+  "color/action/disabled/bg": "neutral/200",
+  "color/action/disabled/fg": "neutral/400",
   "color/action/secondary/bg": "neutral/200",
   "color/feedback/error/fg": "red/700",
   "color/feedback/error/bg-subtle": "red/100"
@@ -60,6 +68,10 @@ export const themes = {
   "color/focus/ring": "lime/400",
   "color/action/primary/bg": "lime/400",
   "color/action/primary/fg": "lime/950",
+  "color/action/primary/bg-hover": "lime/300",
+  "color/action/primary/bg-pressed": "lime/500",
+  "color/action/disabled/bg": "neutral/700",
+  "color/action/disabled/fg": "neutral/500",
   "color/action/secondary/bg": "neutral/700",
   "color/feedback/error/fg": "red/400",
   "color/feedback/error/bg-subtle": "red/900"
@@ -83,6 +95,10 @@ export const desc = {
 'color/action/primary/fg':'Text and icons on action/primary/bg.',
 'color/action/secondary/bg':'Fill of secondary buttons. Text on it is text/primary.',
 'color/feedback/error/fg':'Error text and icons. Not for destructive fills.',
+'color/action/primary/bg-hover':'Primary action background while hovered. Pair with action/primary/fg.',
+'color/action/primary/bg-pressed':'Primary action background while pressed. Pair with action/primary/fg.',
+'color/action/disabled/bg':'Background of any disabled control.',
+'color/action/disabled/fg':'Text and icons of any disabled control. Exempt from WCAG contrast: inactive controls need not meet it.',
 'color/feedback/error/bg-subtle':'Background of error banners and inline error blocks. Pair with feedback/error/fg.'};
 
 
@@ -101,3 +117,15 @@ for (const [k, v, u] of [['xs', 4, 'Tightest gap or padding'], ['sm', 8, 'Small 
   layout.push([`space/${k}`, `space/${v}`, `${u} (${v}px). Works for padding and gaps.`]);
 for (const [k, v, u] of [['sm', 6, 'Small chips, kbd, tooltips'], ['md', 8, 'Buttons, inputs, menu items'], ['lg', 10, 'Cards, composer, list rows'], ['xl', 14, 'Popovers, dialogs, sheets'], ['full', 9999, 'Pills, avatars, round icon buttons']])
   layout.push([`radius/${k}`, `radius/${v}`, `${u}.`]);
+
+// Semantic typography: composite tokens built from primitives. Text styles live
+// in Figma as styles, not variables, so these are generated in the repo only.
+// [name, family, weight, size, line-height, letter-spacing, description]
+export const textStyles = [
+  ['display', 'sans', 700, 24, 32, '0', 'Hero titles and empty states.'],
+  ['heading', 'sans', 600, 18, 28, '0', 'Section and dialog titles.'],
+  ['body', 'sans', 400, 14, 20, '0', 'Default text for messages and controls.'],
+  ['body-small', 'sans', 400, 12, 16, '0', 'Captions, helper and meta text.'],
+  ['label', 'sans', 600, 12, 16, 'wide', 'Small uppercase labels, with wide letter spacing.'],
+  ['code', 'mono', 400, 12, 16, '0', 'Inline code and code blocks.'],
+];

@@ -265,6 +265,26 @@
       }
     },
     "lime": {
+      "300": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8627451062202454,
+            0.9490196108818054,
+            0.4000000059604645
+          ],
+          "alpha": 1,
+          "hex": "#DCF266"
+        },
+        "$description": "Primitive. Do not apply directly: use a semantic token.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:94:10",
+          "com.figma.codeSyntax": {
+            "WEB": "var(--lime-color-lime-300)"
+          }
+        }
+      },
       "400": {
         "$type": "color",
         "$value": {
@@ -285,6 +305,26 @@
           }
         }
       },
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7019608020782471,
+            0.800000011920929,
+            0.1725490242242813
+          ],
+          "alpha": 1,
+          "hex": "#B3CC2C"
+        },
+        "$description": "Primitive. Do not apply directly: use a semantic token.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:94:11",
+          "com.figma.codeSyntax": {
+            "WEB": "var(--lime-color-lime-500)"
+          }
+        }
+      },
       "700": {
         "$type": "color",
         "$value": {
@@ -302,6 +342,46 @@
           "com.figma.variableId": "VariableID:3:17",
           "com.figma.codeSyntax": {
             "WEB": "var(--lime-color-lime-700)"
+          }
+        }
+      },
+      "800": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.29019609093666077,
+            0.3450980484485626,
+            0.03529411926865578
+          ],
+          "alpha": 1,
+          "hex": "#4A5809"
+        },
+        "$description": "Primitive. Do not apply directly: use a semantic token.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:94:12",
+          "com.figma.codeSyntax": {
+            "WEB": "var(--lime-color-lime-800)"
+          }
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.22745098173618317,
+            0.27450981736183167,
+            0.027450980618596077
+          ],
+          "alpha": 1,
+          "hex": "#3A4607"
+        },
+        "$description": "Primitive. Do not apply directly: use a semantic token.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:94:13",
+          "com.figma.codeSyntax": {
+            "WEB": "var(--lime-color-lime-900)"
           }
         }
       },

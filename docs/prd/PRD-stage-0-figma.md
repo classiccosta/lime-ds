@@ -8,7 +8,7 @@ Turn Lime's styles into a token system in Figma: tiered variables, purpose-based
 ## What was built
 - **Audit** of Lime: a local, private script → `docs/audit/AUDIT.md`. The script is not in the repo.
 - **Figma file** with 4 variable collections (Primitives, Theme/Light, Theme/Dark, Layout), 6 text styles, and 3 pages (Cover, Overview, Library).
-- **4 DTCG files** in `tokens/`, built from `scripts/token-source.js`. Steps and the update rule: `docs/token-pipeline.md`.
+- **5 DTCG files** in `tokens/` (four mirror Figma variables, one holds the typography composites), built from `scripts/token-source.js`. Steps and the update rule: `docs/token-pipeline.md`.
 
 ## Standard we followed
 - **Tiers:** primitive, then semantic. Component tokens only when 3+ components share a value.

@@ -13,7 +13,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { prim, alpha, themes, desc, layout, space, radius, fontSize, fontWeight, lineHeight, letterSpacing, fontFamily } from './token-source.js';
+import { prim, alpha, themes, desc, layout, space, radius, fontSize, fontWeight, lineHeight, letterSpacing, fontFamily, textStyles } from './token-source.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'tokens');
@@ -59,7 +59,11 @@ const semDark = semantic('dark');
 const semLayout = {};
 for (const [n, target, d] of layout) set(semLayout, n, { $type: 'dimension', $value: ref(target), $description: d }, 'semantic.layout');
 
-const files = { 'primitive.json': primitive, 'semantic.light.json': semLight, 'semantic.dark.json': semDark, 'semantic.layout.json': semLayout };
+const semType = {};
+for (const [n, fam, w, sz, lh, ls, d] of textStyles)
+  set(semType, `text/${n}`, { $type: 'typography', $value: { fontFamily: ref(`font/family/${fam}`), fontWeight: ref(`font/weight/${w}`), fontSize: ref(`font/size/${sz}`), lineHeight: ref(`font/line-height/${lh}`), letterSpacing: ref(`font/letter-spacing/${ls}`) }, $description: d }, 'semantic.typography');
+
+const files = { 'primitive.json': primitive, 'semantic.light.json': semLight, 'semantic.dark.json': semDark, 'semantic.layout.json': semLayout, 'semantic.typography.json': semType };
 fs.mkdirSync(outDir, { recursive: true });
 for (const [f, o] of Object.entries(files)) fs.writeFileSync(path.join(outDir, f), JSON.stringify(o, null, 2) + '\n');
 
@@ -78,6 +82,15 @@ for (const [label, o] of [['light', semLight], ['dark', semDark], ['layout', sem
     else aliasCount++;
     if (!t.$description) errors.push(`${label}: ${n} has no description`);
   }
+for (const [n, tk] of flat(semType)) {
+  semanticCount++;
+  for (const [k, v] of Object.entries(tk.$value)) {
+    const m = /^\{(.+)\}$/.exec(v);
+    if (!m || !prims.has(m[1])) errors.push(`typography: ${n}.${k} does not resolve to a primitive`);
+    else aliasCount++;
+  }
+  if (!tk.$description) errors.push(`typography: ${n} has no description`);
+}
 const names = (o) => flat(o).map(([n]) => n).sort().join('|');
 if (names(semLight) !== names(semDark)) errors.push('light and dark token names differ');
 
@@ -93,7 +106,7 @@ const resolve = (theme, k) => {
 const pairs = [
   ...['bg/page', 'bg/surface', 'bg/inset', 'bg/sidebar', 'bg/subtle', 'bg/hover', 'action/secondary/bg'].map((b) => ['text/primary', b, 4.5]),
   ...['bg/page', 'bg/surface', 'bg/inset', 'bg/sidebar', 'bg/subtle', 'bg/hover'].map((b) => ['text/secondary', b, 4.5]),
-  ['action/primary/fg', 'action/primary/bg', 4.5],
+  ['action/primary/fg', 'action/primary/bg', 4.5], ['action/primary/fg', 'action/primary/bg-hover', 4.5], ['action/primary/fg', 'action/primary/bg-pressed', 4.5],
   ...['bg/page', 'bg/surface', 'feedback/error/bg-subtle'].map((b) => ['feedback/error/fg', b, 4.5]),
   ['text/on-scrim', 'scrim', 4.5],
   ['focus/ring', 'bg/page', 3], ['focus/ring', 'bg/surface', 3],

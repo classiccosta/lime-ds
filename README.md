@@ -41,7 +41,7 @@ do when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 
 - **Audit of Lime:** 32 colour tokens turned out to be 14 distinct values, and 4 contrast
   pairs failed (all borders). See [`docs/audit/AUDIT.md`](docs/audit/AUDIT.md).
-- **18 semantic colour tokens,** named by purpose and aliasing a shared primitive layer,
+- **22 semantic colour tokens,** named by purpose and aliasing a shared primitive layer,
   plus spacing, radius and 6 text styles, all bound to variables.
 - **Light and dark themes** with identical token names. The light theme is new; Lime only
   had a dark one.

@@ -428,6 +428,66 @@
             }
           }
         },
+        "bg-pressed": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.22745098173618317,
+              0.27450981736183167,
+              0.027450980618596077
+            ],
+            "alpha": 1,
+            "hex": "#3A4607"
+          },
+          "$description": "Primary action background while pressed. Pair with action/primary/fg.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:94:20",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.codeSyntax": {
+              "WEB": "var(--lime-color-action-primary-bg-pressed)"
+            },
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:a83d3b8d48955e2c4de14fe4e19d86c5a878b2e2/-1:-1",
+              "targetVariableName": "color/lime/900",
+              "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "bg-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.29019609093666077,
+              0.3450980484485626,
+              0.03529411926865578
+            ],
+            "alpha": 1,
+            "hex": "#4A5809"
+          },
+          "$description": "Primary action background while hovered. Pair with action/primary/fg.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:94:19",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.codeSyntax": {
+              "WEB": "var(--lime-color-action-primary-bg-hover)"
+            },
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:aa4b876a8b266cc60df2b7b18f7c8a31f5d66579/-1:-1",
+              "targetVariableName": "color/lime/800",
+              "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
         "fg": {
           "$type": "color",
           "$value": {
@@ -485,6 +545,68 @@
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ec48fd07908336dac135fa4b05fc60b1d7920788/-1:-1",
               "targetVariableName": "color/neutral/200",
+              "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        }
+      },
+      "disabled": {
+        "bg": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8274509906768799,
+              0.8509804010391235,
+              0.8156862854957581
+            ],
+            "alpha": 1,
+            "hex": "#D3D9D0"
+          },
+          "$description": "Background of any disabled control.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:94:21",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.codeSyntax": {
+              "WEB": "var(--lime-color-action-disabled-bg)"
+            },
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:ec48fd07908336dac135fa4b05fc60b1d7920788/-1:-1",
+              "targetVariableName": "color/neutral/200",
+              "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
+              "targetVariableSetName": "Primitives"
+            }
+          }
+        },
+        "fg": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4901960790157318,
+              0.5215686559677124,
+              0.48235294222831726
+            ],
+            "alpha": 1,
+            "hex": "#7D857B"
+          },
+          "$description": "Text and icons of any disabled control. Exempt from WCAG contrast: inactive controls need not meet it.",
+          "$extensions": {
+            "com.figma.variableId": "VariableID:94:22",
+            "com.figma.scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "com.figma.codeSyntax": {
+              "WEB": "var(--lime-color-action-disabled-fg)"
+            },
+            "com.figma.aliasData": {
+              "targetVariableId": "VariableID:8b495b3560cf0acf9bf20ccc16d77dc31dc654d0/-1:-1",
+              "targetVariableName": "color/neutral/400",
               "targetVariableSetId": "VariableCollectionId:0466fc6ee041690f0cb9ab1b40b0a446f31af02a/-1:-1",
               "targetVariableSetName": "Primitives"
             }
