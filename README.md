@@ -1,7 +1,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/media/readme/banner-dark.svg">
-  <img alt="Lime Design System — the source of truth for Lime's UI" src="docs/media/readme/banner-light.svg" width="846">
+  <img alt="Lime Design System — Figma UI Kit · design-to-code tokens" src="docs/media/readme/banner-light.svg" width="846">
 </picture>
 </p>
 
@@ -30,16 +30,21 @@ The design system for [Lime](https://github.com/classiccosta/lime-local-ai), a l
 
 ![Token pipeline: production path and this project's free-plan path](docs/token-pipeline.svg)
 
-In production, designers edit Figma and a sync tool (plugin or API) writes the JSON. The Figma free plan has no sync, and its own export drops alias references, so this repo flips the flow: `scripts/token-source.js` is the source, `npm run build` writes `tokens/*.json`, and Figma is mirrored by hand. Style Dictionary, platform outputs, CI and releases are the next stage.
+In production, designers edit Figma and a sync tool writes the JSON. The Figma free plan has no sync and its own export drops alias references, so this repo flips the flow. In order:
 
-**Today:** validated DTCG JSON, checked against Figma. **Stage 1:** CSS, Swift and Kotlin built from it with Style Dictionary, tested in CI, with a live demo.
+1. **Edit** a value in `scripts/token-source.js`. It is the only place values are written.
+2. **Build:** `npm run build` writes `tokens/*.json` (DTCG 2025.10) and validates them (see Tests).
+3. **Mirror** the change in the Figma variables by hand.
+4. **Compare:** `npm run compare` checks `tokens/` against a fresh Figma export and flags drift.
 
 ```bash
 npm run build     # token-source.js → tokens/*.json, then validate
 npm run compare   # tokens/ vs a fresh Figma export
 ```
 
-Edit values in `scripts/token-source.js` only. `tokens/*.json` are generated. Rules for when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
+`tokens/*.json` are generated, never edited. Rules for when Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
+
+**Today:** validated DTCG JSON, checked against Figma. **Next (Stage 1):** Style Dictionary builds CSS, Swift and Kotlin from it, tested in CI, with a live demo.
 
 ## Tests
 
