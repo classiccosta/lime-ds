@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="846" height="94" viewBox="0 0 846 94">
 <g transform="translate(0 26) scale(.875)"><rect x="0" y="0" width="64" height="64" rx="8" fill="#d2ee46"/><g fill="none" stroke="#1b1e1c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18,23 29,32 18,41"/><line x1="33" y1="42" x2="46" y2="42"/></g></g>
 <text x="72" y="52" style="font:700 32px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#f5f7f4">Lime Design System</text>
-<text x="72" y="78" style="font:400 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#a8aea5">the source of truth for Lime's UI</text>
+<text x="72" y="78" style="font:400 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#a8aea5">design tokens</text>
 </svg>

@@ -30,7 +30,7 @@ With a paid plan the target is Material's layout: Getting started, Table of cont
 Modelled on the OutSystems UI Figma kit: a brand strip on top, a small note at the bottom.
 
 - One component, `.Header`, used on every documentation frame. It opens with a **brand strip**: the Lime logo, the `Lime Design System` wordmark and a version pill, then 32px of extra space before the title and definition. The strip is small on purpose: logo 28px, wordmark 14px, pill 9px. The logo is a lime tile (`#d2ee46`, corner radius about 12%) with a dark terminal prompt, the same mark as the Cover card. It reads on light and dark backgrounds, because the tile carries its own colour. It is a fixed-colour illustration, not bound to variables. The app's own favicon is the inverse (dark tile, lime prompt) and is left alone.
-- One component, `.Footer`, closes every documentation frame: a 1px divider, 32px below the content, and one small grey line, `Lime Design System · Figma UI Kit`. It is the only muted text on the boards (12px, `#a8aea5`, 7:1 on the board background), so the white-text rule below does not apply to it. In the 1000px-wide 1.1 frame the instance is resized to 872px.
+- One component, `.Footer`, closes every documentation frame: a 1px divider, 32px below the content, and one small grey line, `Lime Design System · UI Kit`. It is the only muted text on the boards (12px, `#a8aea5`, 7:1 on the board background), so the white-text rule below does not apply to it. In the 1000px-wide 1.1 frame the instance is resized to 872px.
 - The version pill follows `package.json` (`v0.1.0`). Update it in the `.Header` component when the version changes; every frame follows.
 - `.Header` has two text properties: **Component** (the title) and **Definition** (one or two short sentences on what the frame defines). The Table of contents hides its Definition. Pointers to the docs live in the repo, not on the boards.
 - Illustrations in 1.4 Do and don't use fixed colours on purpose: they depict Light and Dark side by side, so they are not bound to variables.
@@ -39,7 +39,7 @@ Modelled on the OutSystems UI Figma kit: a brand strip on top, a small note at t
 
 ## Cover
 
-The Cover page holds one 1600x960 thumbnail, modelled on the OutSystems UI cover: less is more. Content: the title `Lime Design System`, one subtitle (`Figma UI Kit · Version 0.1.0`), two chips (`Design tokens`, `Light & dark mode`) and the logo tile (corner radius 8). Nothing else: no top bar, no palette strip, no slogan. Wording must stay true as the library grows (components, layouts, screens), so it names the kind of file and the version, not what is in it today. Update the version here and in the `.Header` pill together. Write the name in full, `Lime Design System`, never `Lime DS`, everywhere in the file.
+The Cover page holds one 1600x960 thumbnail, modelled on the OutSystems UI cover: less is more. Content: the title `Lime Design System`, one subtitle (`UI Kit · Version 0.1.0`), two chips (`Design tokens`, `Light + dark`) and the logo tile (corner radius 8). Nothing else: no top bar, no palette strip, no slogan. Wording must stay true as the library grows (components, layouts, screens), so it names the kind of file and the version, not what is in it today. Update the version here and in the `.Header` pill together. Write the name in full, `Lime Design System`, never `Lime DS`, everywhere in the file.
 
 ## Table of contents
 
