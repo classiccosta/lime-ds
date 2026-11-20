@@ -39,7 +39,10 @@ npm run compare   # tokens/ vs a fresh Figma export
 - `npm run build` fails if a contrast pair drops below AA.
 - When Figma changes: [`docs/token-pipeline.md`](docs/token-pipeline.md).
 
-## Not yet
+- a semantic token does not alias a primitive, or has no description
+- Light and Dark token names differ
+- a text style references a missing primitive
+- a text, UI or focus pair misses WCAG 2.2 AA (4.5:1 text, 3:1 UI and focus), in either theme
 
 - Token build for CSS, Swift and Kotlin, CI, live demo (Stage 1).
 - Web components (Stencil) and Storybook.
